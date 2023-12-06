@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var bigNumber1 int16 = 32766
-	var bigNumber2 int16 = 32766
-	var result int16 = bigNumber1 + bigNumber2
+	var bigNumber1 int32 = 32765
+	var bigNumber2 int32 = 32765
+	var result int32 = bigNumber1 + bigNumber2
 	fmt.Println(result)
 }
