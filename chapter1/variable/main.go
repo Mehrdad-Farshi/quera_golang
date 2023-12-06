@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func main() {
-     var falseExample bool= false
-     var trueExample  bool= true
-	fmt.Println( !falseExample && trueExample )
+    var example = 25
+    var floatExample = float32(example)
+    
+    fmt.Printf("%S", floatExample)
 }
