@@ -3,8 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	var bigNumber1 int32 = 32765
-	var bigNumber2 int32 = 32765
-	var result int32 = bigNumber1 + bigNumber2
-	fmt.Println(result)
+        var target int = 5
+        sum := 0
+        for i := 1; i <= target; i++ {
+        fmt.Println("i is  =  ",i)
+        fmt.Println("sum before sum+=i =  ",sum)
+            sum += i
+        fmt.Println("sum after sum+=i =  ",sum)
+        }
+        fmt.Println("sum eqauls to ",sum)
 }
