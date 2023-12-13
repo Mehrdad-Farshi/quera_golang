@@ -3,13 +3,12 @@ package main
 import "fmt"
 
 func main() {
-<<<<<<< HEAD
-name := "ahmad"
-    switch name {
-        case "ahmad":
+name := 10
+    switch  {
+        case name >12:
         fmt.Println("Hello Ahmad")
         fallthrough
-        case "mohammad":
+        case name >11:
         fmt.Println("Greetings")
         default:
         fmt.Println("How are you?")
