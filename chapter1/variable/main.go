@@ -3,14 +3,13 @@ package main
 import "fmt"
 
 func main() {
-name := "ahmad"
-    switch name {
-        case "ahmad":
-        fmt.Println("Hello Ahmad")
-        fallthrough
-        case "mohammad":
-        fmt.Println("Greetings")
-        default:
-        fmt.Println("How are you?")
-    }
+        var target int = 5
+        sum := 0
+        for i := 1; i <= target; i++ {
+        fmt.Println("i is  =  ",i)
+        fmt.Println("sum before sum+=i =  ",sum)
+            sum += i
+        fmt.Println("sum after sum+=i =  ",sum)
+        }
+        fmt.Println("sum eqauls to ",sum)
 }
