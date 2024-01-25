@@ -1,16 +1,21 @@
 package main
 
 import (
-	"errors"
 	"fmt"
+	"strings"
 )
 
 func main() {
-	var q, p int
-	fmt.Println("Type two numbers: q ( end of game) and then p (mazrab) ")
-	if q == 0 {
-		return "error", errors.New("negetive number")
+	var lastNumber, mazrab int
+	// fmt.Print(" two numbers: (mazrab) and then  Type  lastNumber ( end of game) :")
+	fmt.Scanln(&mazrab, &lastNumber)
+	// fmt.Println("lastNumber is equal to = ", lastNumber, ", mazrab is equal to = ", mazrab)
+
+	for i := 1; i <= lastNumber; i++ {
+		if i%mazrab == 0 {
+			fmt.Println(strings.Repeat("Hope ", i/mazrab))
+		} else {
+			fmt.Println(i)
+		}
 	}
-	fmt.Scanln(&q, &p)
-	fmt.Println("q is equal to = ", q, ", p is equal to = ", p)
 }
